@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Writers Cafe 208 | Anatomy of 7.7C</title>
+
+<style>
+
+:root{
+  --coffee:#4b3429;
+  --espresso:#2b1d17;
+  --cream:#fff8ef;
+  --gold:#f4c15d;
+  --teal:#4aa7a0;
+  --softPink:#f4d7d7;
+  --rose:#d98989;
+}
+
+body{
+  margin:0;
+  font-family:Arial,sans-serif;
+  background:linear-gradient(135deg,var(--espresso),var(--coffee),var(--teal));
+  color:var(--cream);
+  padding:20px;
+}
+
+.container{
+  max-width:1150px;
+  margin:auto;
+  background:rgba(34,20,16,.88);
+  padding:35px;
+  border-radius:26px;
+  box-shadow:0 12px 35px rgba(0,0,0,.45);
+}
+
+.brand{
+  text-align:center;
+  color:var(--gold);
+  font-weight:bold;
+  letter-spacing:1px;
+}
+
+h1,h2,h3{
+  text-align:center;
+}
+
+.intro{
+  text-align:center;
+  line-height:1.8;
+  font-size:18px;
+}
+
+.card{
+  background:rgba(255,248,239,.10);
+  padding:24px;
+  border-radius:20px;
+  margin-top:22px;
+  line-height:1.8;
+}
+
+.student{
+  border-left:6px solid var(--gold);
+}
+
+.teacher{
+  border-left:6px solid var(--teal);
+  background:rgba(74,167,160,.14);
+}
+
+.soft{
+  border-left:6px solid var(--rose);
+  background:rgba(217,137,137,.14);
+}
+
+.choice{
+  background:rgba(255,248,239,.12);
+  padding:16px;
+  border-radius:16px;
+  margin-top:14px;
+  border:2px solid transparent;
+  cursor:pointer;
+  transition:.25s;
+}
+
+.choice:hover{
+  border-color:var(--gold);
+  transform:translateY(-2px);
+}
+
+.choice.selected{
+  border-color:var(--gold);
+  background:rgba(244,193,93,.20);
+}
+
+button{
+  width:100%;
+  padding:14px;
+  border:none;
+  border-radius:14px;
+  background:var(--gold);
+  color:var(--espresso);
+  font-weight:bold;
+  font-size:16px;
+  cursor:pointer;
+  margin-top:15px;
+}
+
+.hidden{
+  display:none;
+}
+
+.highlight{
+  color:var(--gold);
+  font-weight:bold;
+}
+
+.arrow{
+  text-align:center;
+  font-size:32px;
+  margin:16px;
+  color:var(--gold);
+}
+
+.flow{
+  text-align:center;
+  font-weight:bold;
+  color:var(--softPink);
+  line-height:2;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:15px;
+}
+
+.mini{
+  background:rgba(255,248,239,.10);
+  padding:16px;
+  border-radius:14px;
+}
+
+.footer{
+  text-align:center;
+  margin-top:40px;
+  color:var(--gold);
+  font-weight:bold;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<p class="brand">#WritersCafe208</p>
+
+<h1>Anatomy of 7.7C</h1>
+
+<p class="intro">
+This experience helps teachers see the hidden thinking students must coordinate when analyzing how plot elements, foreshadowing, and suspense advance the plot.
+</p>
+
+<div class="card teacher">
+
+<h2>7.7C — Plot Elements, Foreshadowing, and Suspense</h2>
+
+<p>
+<span class="highlight">TEKS:</span>
+Analyze plot elements, including the use of foreshadowing and suspense, to advance the plot.
+</p>
+
+<div class="soft">
+
+<h3>The Hidden Choreography</h3>
+
+<div class="flow">
+
+NOTICE PLOT CLUES
+<br>↓<br>
+
+TRACK READER QUESTIONS
+<br>↓<br>
+
+CONNECT EARLY CLUES TO LATER EVENTS
+<br>↓<br>
+
+ANALYZE SUSPENSE
+<br>↓<br>
+
+EXPLAIN HOW THE PLOT ADVANCES
+
+</div>
+
+</div>
+
+<button onclick="startExperience()">
+Experience this TEKS as a Student
+</button>
+
+</div>
+
+<div id="experience" class="hidden">
+
+<!-- EXAMPLE 1 -->
+
+<div class="card student">
+
+<h2>Example 1 — Clear Mystery Suspense</h2>
+
+<p>
+
+At the beginning of the story, Laila notices that the old school clock keeps stopping at exactly 3:17 each afternoon.
+
+<br><br>
+
+Her friend tells her it is probably broken, but Laila remembers that the missing art club key was last seen near the clock.
+
+<br><br>
+
+Later, strange things begin happening around the school. A hallway light flickers whenever someone walks past the display case. Then the principal announces that the art competition trophy has disappeared.
+
+<br><br>
+
+Laila begins wondering whether the clock, the key, and the trophy are connected.
+
+<br><br>
+
+At the climax, Laila opens the clock and finds the missing key hidden inside.
+
+</p>
+
+</div>
+
+<div class="card student">
+
+<h2>Question 1 — Notice the Plot Clue</h2>
+
+<p>
+Which detail BEST foreshadows an important later event?
+</p>
+
+<div class="choice" onclick="exampleOne(this,'a')">
+A. The principal announces the trophy is missing.
+</div>
+
+<div class="choice" onclick="exampleOne(this,'b')">
+B. The hallway light flickers near the display case.
+</div>
+
+<div class="choice" onclick="exampleOne(this,'best')">
+C. The clock keeps stopping at 3:17, and the missing key was last seen near the clock.
+</div>
+
+<div class="choice" onclick="exampleOne(this,'d')">
+D. Laila notices strange things around the school.
+</div>
+
+<div id="exampleOneFeedback" class="card teacher hidden"></div>
+
+</div>
+<div id="tensionSection" class="hidden">
+
+<div class="arrow">↓</div>
+
+<div class="card student">
+
+<h2>Question 2 — Track Suspense</h2>
+
+<p>
+Which moment BEST builds suspense by making the reader wonder what will happen next?
+</p>
+
+<div class="choice" onclick="tensionChoice(this,'partial')">
+A. Laila’s friend says the clock is probably broken.
+</div>
+
+<div class="choice" onclick="tensionChoice(this,'best')">
+B. The clock, missing key, flickering light, and missing trophy all seem connected.
+</div>
+
+<div class="choice" onclick="tensionChoice(this,'summary')">
+C. The story takes place during an art competition.
+</div>
+
+<div class="choice" onclick="tensionChoice(this,'weak')">
+D. Laila notices strange things around the school.
+</div>
+
+<div id="tensionFeedback" class="card teacher hidden"></div>
+
+</div>
+
+</div>
+
+<!-- CONNECTION SECTION -->
+
+<div id="connectionSection" class="hidden">
+
+<div class="arrow">↓</div>
+
+<div class="card student">
+
+<h2>Question 3 — Connect Foreshadowing to Later Events</h2>
+
+<p>
+How does the early detail about the clock advance the plot?
+</p>
+
+<div class="choice" onclick="connectionChoice(this,'partial')">
+A. It creates a mysterious mood around the school.
+</div>
+
+<div class="choice" onclick="connectionChoice(this,'summary')">
+B. It shows that Laila pays attention to details.
+</div>
+
+<div class="choice" onclick="connectionChoice(this,'weak')">
+C. It proves the clock is the most important object in the story.
+</div>
+
+<div class="choice" onclick="connectionChoice(this,'best')">
+D. It plants a clue that becomes important later when Laila discovers the hidden key.
+</div>
+
+<div id="connectionFeedback" class="card teacher hidden"></div>
+
+</div>
+
+</div>
+
+<!-- PLOT SECTION -->
+
+<div id="plotSection" class="hidden">
+
+<div class="arrow">↓</div>
+
+<div class="card student">
+
+<h2>Question 4 — Analyze How Suspense Advances the Plot</h2>
+
+<p>
+How does suspense help move the story forward?
+</p>
+
+<div class="choice" onclick="plotChoice(this,'best')">
+A. The unanswered questions push Laila to continue investigating until the mystery is resolved.
+</div>
+
+<div class="choice" onclick="plotChoice(this,'summary')">
+B. The missing trophy makes the story exciting.
+</div>
+
+<div class="choice" onclick="plotChoice(this,'partial')">
+C. The story creates a mysterious mood at the school.
+</div>
+
+<div class="choice" onclick="plotChoice(this,'unsupported')">
+D. Laila already knows where the trophy is hidden.
+</div>
+
+<div id="plotFeedback" class="card teacher hidden"></div>
+
+</div>
+
+</div>
+
+<!-- EXAMPLE 2 -->
+
+<div id="exampleTwoSection" class="hidden">
+
+<div class="arrow">↓</div>
+
+<div class="card student">
+
+<h2>Example 2 — Subtle Emotional Suspense</h2>
+
+<p>
+
+Before the championship race, Andre folds his lucky blue wristband into his backpack instead of wearing it.
+
+<br><br>
+
+His coach notices but says nothing.
+
+<br><br>
+
+Andre keeps glancing at the empty space on his wrist while the announcer calls runners to the starting line.
+
+<br><br>
+
+Halfway through the race, Andre begins struggling to keep pace.
+
+<br><br>
+
+Near the final stretch, Andre remembers why he stopped wearing the wristband:
+
+<br><br>
+
+He wanted to prove he could trust himself instead of luck.
+
+</p>
+
+</div>
+
+<div class="card student">
+
+<h2>Question 5 — Find the Subtle Foreshadowing</h2>
+
+<p>
+Which detail BEST foreshadows Andre’s internal conflict?
+</p>
+
+<div class="choice" onclick="exampleTwo(this,'a')">
+A. Andre’s coach notices the backpack.
+</div>
+
+<div class="choice" onclick="exampleTwo(this,'summary')">
+B. Andre is running in a championship race.
+</div>
+
+<div class="choice" onclick="exampleTwo(this,'best')">
+C. Andre hides the wristband but keeps glancing at his empty wrist.
+</div>
+
+<div class="choice" onclick="exampleTwo(this,'weak')">
+D. Andre hears teammates cheering during the race.
+</div>
+
+<div id="exampleTwoFeedback" class="card teacher hidden"></div>
+
+</div>
+
+<div id="subtleSuspenseSection" class="hidden">
+
+<div class="arrow">↓</div>
+
+<div class="card student">
+
+<h2>Question 6 — Recognize Subtle Suspense</h2>
+
+<p>
+How does the author create suspense without using a mystery?
+</p>
+
+<div class="choice" onclick="subtleSuspense(this,'summary')">
+A. The race itself feels competitive and exciting.
+</div>
+
+<div class="choice" onclick="subtleSuspense(this,'weak')">
+B. Andre has a lucky wristband.
+</div>
+
+<div class="choice" onclick="subtleSuspense(this,'partial')">
+C. Readers wonder whether Andre will win the race.
+</div>
+
+<div class="choice" onclick="subtleSuspense(this,'best')">
+D. Readers wonder whether Andre will trust himself when pressure builds.
+</div>
+
+<div id="subtleSuspenseFeedback" class="card teacher hidden"></div>
+
+</div>
+
+</div>
+<!-- COGNITIVE CHOREOGRAPHY -->
+
+<div id="teacherLens" class="hidden">
+
+<div class="arrow">↓</div>
+
+<div class="card teacher">
+
+<h2>Cognitive Choreography</h2>
+
+<div class="grid">
+
+<div class="mini">
+<h3>Move 1: Spot the Plot Clue</h3>
+<p>
+Students must notice details that may matter later instead of treating all details equally.
+</p>
+</div>
+
+<div class="mini">
+<h3>Move 2: Track Reader Questions</h3>
+<p>
+Students must recognize what the author is making the reader wonder about.
+</p>
+</div>
+
+<div class="mini">
+<h3>Move 3: Connect Clues to Events</h3>
+<p>
+Students must connect earlier clues to later events in the plot.
+</p>
+</div>
+
+<div class="mini">
+<h3>Move 4: Analyze Suspense</h3>
+<p>
+Students must explain how uncertainty and tension move the story forward.
+</p>
+</div>
+
+<div class="mini">
+<h3>Move 5: Explain Plot Advancement</h3>
+<p>
+Students must explain how foreshadowing and suspense help move the story toward climax and resolution.
+</p>
+</div>
+
+</div>
+
+</div>
+
+<div class="card soft">
+
+<h2>Why Students Can Still Struggle with 7.7C</h2>
+
+<p>
+
+Students often know a story feels suspenseful or emotional…
+
+<br><br>
+
+…but they cannot yet explain HOW the author constructed those effects to advance the plot.
+
+</p>
+
+<p class="highlight">
+
+The rigor is not identifying suspense.
+
+<br><br>
+
+The rigor is explaining HOW suspense advances the plot.
+
+</p>
+
+</div>
+
+<div class="card teacher">
+
+<h2>Ready for the Rigor Layer?</h2>
+
+<p>
+Now experience what happens when scaffolds disappear and students must independently coordinate the thinking.
+</p>
+
+<button onclick="showRigor()">
+
+⚡ See It Closer to STAAR Rigor
+
+</button>
+
+</div>
+
+</div>
+
+<!-- STAAR RIGOR SECTION -->
+
+<div id="rigorSection" class="hidden">
+
+<div class="arrow">↓</div>
+
+<div class="card soft">
+
+<h2>7.7C — Closer to STAAR Rigor</h2>
+
+<ul>
+
+<li>Foreshadowing becomes more subtle</li>
+
+<li>Suspense becomes emotional instead of dramatic</li>
+
+<li>Distractors contain partially true information</li>
+
+<li>Students must independently explain how plot elements advance the story</li>
+
+</ul>
+
+</div>
+
+<div class="card student">
+
+<h2>Read the Fiction Passage</h2>
+
+<p>
+
+Nia checked her phone again while the bus bumped toward the regional robotics competition.
+
+<br><br>
+
+Three unread messages from her father still sat at the top of the screen.
+
+<br><br>
+
+“You’ll do great today.”
+
+<br><br>
+
+“Call me after the competition.”
+
+<br><br>
+
+“Good luck.”
+
+<br><br>
+
+Nia slid the phone into her backpack without replying.
+
+<br><br>
+
+At the convention center, teams hurried between tables carrying laptops, wires, and tool kits.
+
+<br><br>
+
+During the first round, the robot suddenly froze in the obstacle course while the timer continued counting down.
+
+<br><br>
+
+Mateo looked at Nia.
+
+<br><br>
+
+“Can you fix it?”
+
+<br><br>
+
+Nia hesitated.
+
+<br><br>
+
+Usually she preferred working quietly behind the scenes instead of explaining problems publicly.
+
+<br><br>
+
+But the timer kept running.
+
+<br><br>
+
+Nia stepped forward, explained the issue to the judge, and quickly reconnected the loose wire.
+
+</p>
+
+</div>
+
+<div class="card student">
+
+<h2>STAAR-Style Question</h2>
+
+<p>
+How does suspense help advance the plot?
+</p>
+
+<div class="choice" onclick="rigorChoice(this,'a')">
+A. The robotics competition feels exciting and competitive.
+</div>
+
+<div class="choice" onclick="rigorChoice(this,'b')">
+B. Readers wonder whether the robot will work again.
+</div>
+
+<div class="choice" onclick="rigorChoice(this,'best')">
+C. Readers wonder whether Nia will trust herself and step forward publicly under pressure.
+</div>
+
+<div class="choice" onclick="rigorChoice(this,'d')">
+D. Mateo depends on Nia to solve technical problems.
+</div>
+
+<div id="rigorFeedback" class="card teacher hidden"></div>
+
+</div>
+
+<div class="footer">
+#WritersCafe208 — Teaching Thinking, Not Just Standards
+</div>
+
+</div>
+
+<script>
+
+function startExperience(){
+  document.getElementById("experience").classList.remove("hidden");
+}
+
+function clearChoices(parent){
+  parent.querySelectorAll(".choice").forEach(choice=>{
+    choice.classList.remove("selected");
+  });
+}
+
+function exampleOne(el,type){
+
+  clearChoices(el.parentElement);
+
+  el.classList.add("selected");
+
+  const feedback=document.getElementById("exampleOneFeedback");
+
+  feedback.classList.remove("hidden");
+
+  if(type==="best"){
+
+    feedback.innerHTML=`
+    <h3>Teacher Reflection</h3>
+
+    <p>
+    Correct. Strong readers recognize clues that carry future plot importance.
+    </p>
+
+    <p class="highlight">
+    The clock detail foreshadows the later discovery of the hidden key.
+    </p>
+    `;
+
+    document.getElementById("tensionSection").classList.remove("hidden");
+
+  } else {
+
+    feedback.innerHTML=`
+    <h3>Teacher Reflection</h3>
+
+    <p>
+    This detail may matter, but it does not function as the strongest foreshadowing clue.
+    </p>
+    `;
+  }
+}
+
+function tensionChoice(el,type){
+
+  clearChoices(el.parentElement);
+
+  el.classList.add("selected");
+
+  const feedback=document.getElementById("tensionFeedback");
+
+  feedback.classList.remove("hidden");
+
+  if(type==="best"){
+
+    feedback.innerHTML=`
+    <h3>Teacher Reflection</h3>
+
+    <p>
+    Correct. Suspense builds when readers begin connecting unanswered questions together.
+    </p>
+
+    <p class="highlight">
+    Readers begin wondering how all the clues connect.
+    </p>
+    `;
+
+    document.getElementById("connectionSection").classList.remove("hidden");
+
+  } else {
+
+    feedback.innerHTML=`
+    <h3>Teacher Reflection</h3>
+
+    <p>
+    This answer contributes to the story, but it does not create the strongest suspense.
+    </p>
+    `;
+  }
+}
+
+function connectionChoice(el,type){
+
+  clearChoices(el.parentElement);
+
+  el.classList.add("selected");
+
+  const feedback=document.getElementById("connectionFeedback");
+
+  feedback.classList.remove("hidden");
+
+  if(type==="best"){
+
+    feedback.innerHTML=`
+    <h3>Teacher Reflection</h3>
+
+    <p>
+    Correct. The clue becomes important later in the plot.
+    </p>
+
+    <p class="highlight">
+    This is where foreshadowing becomes plot analysis.
+    </p>
+    `;
+
+    document.getElementById("plotSection").classList.remove("hidden");
+
+  } else {
+
+    feedback.innerHTML=`
+    <h3>Teacher Reflection</h3>
+
+    <p>
+    This answer contains some truth, but it does not fully explain how the clue advances the plot.
+    </p>
+    `;
+  }
+}
+
+function plotChoice(el,type){
+
+  clearChoices(el.parentElement);
+
+  el.classList.add("selected");
+
+  const feedback=document.getElementById("plotFeedback");
+
+  feedback.classList.remove("hidden");
+
+  if(type==="best"){
+
+    feedback.innerHTML=`
+    <h3>Teacher Reflection</h3>
+
+    <p>
+    Correct.
+    </p>
+
+    <p class="highlight">
+    The unanswered questions keep pushing the investigation forward.
+    </p>
+    `;
+
+    document.getElementById("exampleTwoSection").classList.remove("hidden");
+
+  } else {
+
+    feedback.innerHTML=`
+    <h3>Teacher Reflection</h3>
+
+    <p>
+    This answer stays too general or is not fully supported by the text.
+    </p>
+    `;
+  }
+}
+
+function exampleTwo(el,type){
+
+  clearChoices(el.parentElement);
+
+  el.classList.add("selected");
+
+  const feedback=document.getElementById("exampleTwoFeedback");
+
+  feedback.classList.remove("hidden");
+
+  if(type==="best"){
+
+    feedback.innerHTML=`
+    <h3>Teacher Reflection</h3>
+
+    <p>
+    Correct. The wristband detail subtly foreshadows Andre’s internal conflict.
+    </p>
+
+    <p class="highlight">
+    Not all foreshadowing feels mysterious. Sometimes it points toward emotional struggle.
+    </p>
+    `;
+
+    document.getElementById("subtleSuspenseSection").classList.remove("hidden");
+
+  } else {
+
+    feedback.innerHTML=`
+    <h3>Teacher Reflection</h3>
+
+    <p>
+    This detail may matter, but it is not the strongest foreshadowing clue.
+    </p>
+    `;
+  }
+}
+
+function subtleSuspense(el,type){
+
+  clearChoices(el.parentElement);
+
+  el.classList.add("selected");
+
+  const feedback=document.getElementById("subtleSuspenseFeedback");
+
+  feedback.classList.remove("hidden");
+
+  if(type==="best"){
+
+    feedback.innerHTML=`
+    <h3>Teacher Reflection</h3>
+
+    <p>
+    Correct. The suspense is emotional instead of mysterious.
+    </p>
+
+    <p class="highlight">
+    Readers wonder whether Andre will trust himself when pressure builds.
+    </p>
+    `;
+
+    document.getElementById("teacherLens").classList.remove("hidden");
+
+  } else {
+
+    feedback.innerHTML=`
+    <h3>Teacher Reflection</h3>
+
+    <p>
+    This answer contains true information, but it does not capture the deepest source of suspense.
+    </p>
+    `;
+  }
+}
+
+function showRigor(){
+
+  document.getElementById("rigorSection").classList.remove("hidden");
+
+  document.getElementById("rigorSection").scrollIntoView({
+    behavior:"smooth"
+  });
+
+}
+
+function rigorChoice(el,type){
+
+  clearChoices(el.parentElement);
+
+  el.classList.add("selected");
+
+  const feedback=document.getElementById("rigorFeedback");
+
+  feedback.classList.remove("hidden");
+
+  if(type==="best"){
+
+    feedback.innerHTML=`
+    <h3>Teacher Reflection</h3>
+
+    <p>
+    Correct.
+    </p>
+
+    <p class="highlight">
+    The deepest suspense is whether Nia will trust herself and step forward publicly under pressure.
+    </p>
+    `;
+
+  } else {
+
+    feedback.innerHTML=`
+    <h3>Teacher Reflection</h3>
+
+    <p>
+    This answer contains some truth, but it stays at the surface level instead of analyzing the deeper suspense driving the plot.
+    </p>
+    `;
+  }
+}
+
+</script>
+
+</body>
+</html>
